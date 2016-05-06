@@ -1,0 +1,35 @@
+[user]
+  name = Miguel Teixeira
+  email = miguelfteixeira@gmail.com
+[merge]
+  keepBackup = false;
+  tool = vimdiff
+  prompt = false
+[diff]
+  tool = vimdiff
+  prompt = false
+[difftool]
+  tool = vimdiff
+  prompt = false
+[alias]
+  d = difftool
+  c = commit -v
+  s = status
+  co = checkout
+  b = branch --color
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+[color]
+  ui = auto
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+[push]
+  default = simple
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
