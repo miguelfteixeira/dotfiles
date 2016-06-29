@@ -7,7 +7,7 @@ ln -s ~/work/dotfiles/vimrc .vimrc
 
 ln -s ~/work/dotfiles/vimrc-plugins .vimrc-plugins
 
-ln -s ~/work/dotfiles/colors/Tomorrow-Night.vim .vim/colors/Tomorrow-Night.vim
+ln -s ~/work/dotfiles/vim-colors/lucius.vim .vim/colors/lucius.vim
 
 ln -s ~/work/dotfiles/gitconfig .gitconfig
 
