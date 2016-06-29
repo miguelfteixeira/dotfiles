@@ -10,9 +10,9 @@ set relativenumber
 filetype indent on
 set colorcolumn=120
 set visualbell
-colorscheme Tomorrow-Night
+colorscheme lucius
+set background=light
 set cursorline
-set cursorcolumn
 
 " automatically rebalance windows on vim resize
 autocmd VimResized * :wincmd =
