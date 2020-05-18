@@ -19,5 +19,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
+Plug 'elixir-editors/vim-elixir'
+Plug 'morhetz/gruvbox'
 
 call plug#end()

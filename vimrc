@@ -1,5 +1,8 @@
 source ~/.vimrc-plugins
 
+set encoding=utf-8
+scriptencoding utf-8
+
 " Config
 set autoread
 set nobackup
@@ -10,8 +13,7 @@ set relativenumber
 filetype indent on
 set colorcolumn=120
 set visualbell
-colorscheme lucius
-set background=light
+colorscheme gruvbox
 set cursorline
 
 " automatically rebalance windows on vim resize
@@ -22,9 +24,6 @@ set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
-
-" Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
 
 " Better search
 set ignorecase
@@ -76,9 +75,13 @@ vmap <Leader>p "*p
 vmap <Leader>P "*P
 
 " Vim Tmux Runner + Vim Rspec
-let g:rspec_command = "VtrSendCommandToRunner! rspec {spec}"
+let g:rspec_command = "VtrSendCommandToRunner! docker-compose run --rm development bash -c 'rspec {spec}'"
 
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Move between open buffers.
+nmap <C-n> :bnext<CR>
+nmap <C-N> :bprev<CR>
